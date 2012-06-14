@@ -12,14 +12,6 @@ class DbUnitSampleTest extends GroovyTestCase {
 
     static {
         Sql.newInstance('jdbc:mysql://localhost:3306/test', '', '', 'com.mysql.jdbc.Driver').executeUpdate('delete from emp')
-//        .execute(
-//            """
-//            CREATE TABLE emp (
-//                empno INTEGER PRIMARY KEY,
-//                ename VARCHAR(10),
-//                job VARCHAR(9)
-//            );
-//        """)
     }
     
     JdbcDatabaseTester tester
